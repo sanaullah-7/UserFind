@@ -76,3 +76,7 @@ This project allows you to search any GitHub user by **username**, view their pr
 ├── index.html       # (User interface)
 ├── script.js        # (All JS logic)
 └── README.md        # (This file)
+
+👨‍💻 Author
+Made with ❤️ by [Malak Sana Ullah] — aDreamDe project
+Feel free to contribute or suggest improvements!
