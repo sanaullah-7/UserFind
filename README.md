@@ -1,43 +1,53 @@
-# 📝 Form Validation with To-Do List (Local Storage)
+# 🔍 aDreamDe – GitHub User & Post Finder
 
-A complete frontend project demonstrating user registration, login authentication, and a functional to-do list — all using **HTML**, **CSS**, and **JavaScript**, with data stored in the browser's `localStorage`.
+A clean and interactive frontend project that allows users to search for any GitHub user by **username**, display their **profile information**, and fetch their **public repositories** — all using **HTML**, **CSS**, and **JavaScript**, with data dynamically fetched from the GitHub REST API.
 
-🚀 **Live Demo**: [Click here to view](https://sanaullah-7.github.io/Form-Validation/)
+🚀 **Live Demo**: [Click here to view](https://sanaullah-7.github.io/UserFind/)  
+📦 **API Source**: [GitHub Users API](https://api.github.com)
 
 ---
 
 ## 📖 Project Description
 
-This project is a **multi-page web application** designed to simulate a basic user management system with an integrated to-do list. It includes:
+This is a single-page web app where users can:
 
-- A **Registration page** where users can sign up with name, email, and password.
-- A **Login page** that checks user credentials stored in local storage.
-- A **Home page** with a personalized to-do list interface that allows users to add, complete, or delete tasks.
+- Enter a GitHub **username** in the input field.
+- View that user’s **ID**, **Name**, and **Email** (if available).
+- Click on a **“Get Posts”** button to view that user’s public **repositories** as “posts”.
 
-All user data and tasks are handled using the browser's `localStorage`, which means data persists even after page refreshes. This project is fully frontend-based with no backend, making it ideal for practicing DOM manipulation, data persistence, and user input validation in JavaScript.
+The app fetches real-time data from the GitHub REST API using the `fetch()` method. It demonstrates how to work with asynchronous JavaScript, conditional rendering, and DOM manipulation.
+
+This project is 100% frontend and doesn’t require a backend or database. It is a great exercise in working with APIs and building real-world UIs with plain JavaScript.
 
 ---
 
 ## 📌 Features
 
-- ✅ Real-time form validation (empty fields, email format, etc.)
-- 🔐 Basic authentication logic with login/logout functionality
-- 🗒️ Dynamic to-do list (Add, Delete, Mark as Complete)
-- 💾 Data persistence using `localStorage`
-- 📁 Multi-page navigation (Register → Login → Home)
-- 🎨 Clean and responsive UI
+- 🔍 Search GitHub users by their username
+- 📋 Display user info: `Name`, `User ID`, `Email`
+- 📘 Fetch and show public repositories with:
+  - Repo `ID`
+  - Repo `Name`
+- ⚠️ Show “User not found” message if input is invalid
+- ⚡ Responsive and interactive design
 
 ---
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- Web Storage API (`localStorage`)
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- GitHub REST API (`https://api.github.com/users/`)  
 - GitHub Pages (for deployment)
 
 ---
 
 ## 📂 Project Structure
 
+```bash
+.
+├── index.html        # Main HTML file with input/search UI
+├── script.js         # Contains fetch logic and DOM manipulation
+├── style.css         # Styling for cards, layout, and buttons
+└── README.md         # Project documentation
